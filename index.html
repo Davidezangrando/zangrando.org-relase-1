@@ -2,19 +2,35 @@
 <html>
 	<head>
 		<script type="text/javascript">
-			if(location.protocol !== 'https:') {
-				location.replace(`https:${location.href.substring(location.protocol.length)}`);
-			}
+			
 		</script>
 		<meta name="google-adsense-account" content="ca-pub-1296786266523854">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Davide Zangrando's Website</title>
-	<meta name="viewport" content="width=device-width, initial-scale=2">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
+<script>
+	// Disabilita lo scrolling orizzontale utilizzando JavaScript
+window.addEventListener('scroll', function(e) {
+    // Se viene rilevato uno scrolling orizzontale, reimposta lo scroll della finestra
+    if (window.scrollX !== 0) {
+        window.scrollTo(0, window.scrollY);
+    }
+});
 
+// Disabilita lo scrolling orizzontale sui dispositivi touchscreen
+window.addEventListener('touchmove', function(e) {
+    // Se viene rilevato uno scrolling orizzontale, impedisce il comportamento predefinito
+    if (e.touches.length > 1 || (e.touches[0].clientX - e.touches[0].pageX) !== 0) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+
+</script>
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
@@ -72,7 +88,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="active"><a href="index.html">Area riservata</a></li>
 						</ul>
 					</div>
 				</div>
@@ -102,10 +118,10 @@
 					<div class="col-md-5 animate-box">
 						<div class="owl-carousel3">
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about.jpeg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="images/about-2.jpeg" alt="html5 bootstrap template by colorlib.com">
 							</div>
 							<div class="item">
-								<img class="img-responsive about-img" src="images/about-2.jpeg" alt="html5 bootstrap template by colorlib.com">
+								<img class="img-responsive about-img" src="images/about-3.jpeg" alt="html5 bootstrap template by colorlib.com">
 							</div>
 						</div>
 					</div>
@@ -131,10 +147,6 @@
 								<p><a href="https://www.linkedin.com/in/davide-zangrando/" class="btn btn-primary btn-outline">Contact Me!</a></p>
 							</div>
 						</div>
-						<center>
-						<p> Listen this Giovaboy's Song! </p>
-						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4i0pm4EHFIm3Nvj2iXx3l3?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-						</center>
 					</div>
 				</div>
 			</div>
@@ -186,6 +198,7 @@
 											<ul>
 												<li>Flutter Development</li>
 												<li>Burp Suite</li>
+												<li>C++</li>
 												<li>C++</li>
 											</ul>
 										</div>
